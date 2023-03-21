@@ -5,7 +5,33 @@ body {
 
 a {
     color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    text-decoration: inherit;
+    border-bottom: 0.25rem solid;
+  }
+
+a:link {
+    color: inherit; /* blue colors for links too */
+    border-bottom: 0.25rem solid;
+  }
+
+a:hover {
+    color: inherit; /* blue colors for links too */
+    border-bottom: 0.5rem solid;
+    border-radius: 0.75rem;
+    transition: 1s ease;
+  }
+
+a:focus {
+    color: inherit; /* blue colors for links too */
+    border-bottom: 0.5rem solid;
+    border-radius: 0.75rem;
+    transition: 1s ease;
+  }
+
+a:active {
+    color: inherit; /* blue colors for links too */
+    border-bottom: 0.5rem dashed;
+    transition: 0.5s ease;
   }
 
 header {
