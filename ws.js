@@ -1,23 +1,34 @@
-const note = document.querySelectorAll('.initial');
-console.log(note);
+const sidebar1 = document.querySelector('.sidebar1');
+const sidebar2 = document.querySelector('.sidebar2');
+const main = document.querySelector('.main');
 
 
-function colorPick()    {
-    document.getElementById("bg").addEventListener('change', (e) => {
-        let color = e.target.value;
-        console.dir(color);
-        for (let i = 0; i < note.length; i++) {
-            note[i].style.backgroundColor = color;
-    };
-});
+document.querySelector('#access_menu').onclick = function () {
+  if (sidebar1.classList.contains('side_bigger')) {
+    sidebar1.classList.toggle('side_bigger');
+  } else {
+    main.classList.toggle('main_smaller');
+  }
+  sidebar2.classList.toggle('side_bigger');
 };
 
-colorPick();
+document.querySelector('#nav_menu').onclick = function () {
+  if (sidebar2.classList.contains('side_bigger')) {
+    sidebar2.classList.toggle('side_bigger');
+  } else {
+    main.classList.toggle('main_smaller');
+  }
+  sidebar1.classList.toggle('side_bigger');
+};
 
-
-
-
-
+/*
+if (main.classList.contains('main_smaller')) {
+  console.log('yes');
+} else {
+  main.classList.toggle('main_smaller');
+}
+sidebar2.classList.toggle('side_bigger');
+*/
 
 
 
