@@ -21,14 +21,44 @@ document.querySelector('#nav_menu').onclick = function () {
   sidebar1.classList.toggle('side_bigger');
 };
 
-/*
-if (main.classList.contains('main_smaller')) {
-  console.log('yes');
-} else {
-  main.classList.toggle('main_smaller');
-}
-sidebar2.classList.toggle('side_bigger');
-*/
+
+
+//main.style.fontSize = "100%";
+//main.style.fontSize = "150%";
+//main.style.fontSize = "200%";
+
+//main.classList.toggle(oneX);
+//main.classList.toggle(oneandhalfX);
+//Access Buttons
+const oneX = document.querySelector('#oneX');
+const oneandhalfX = document.querySelector('#oneandhalfX');
+const twoX = document.querySelector('#twoX');
+
+//oneX.addEventListener('click', oneXfnc);
+//oneandhalfX.addEventListener('click', oneandhalfXfnc);
+//twoX.addEventListener('click', twoXfnc);
+
+const changeFont1 = (a) => {
+  main.classList.remove('oneX', 'oneandhalfX', 'twoX');
+  main.classList.toggle(a.target.id);
+}; 
+
+oneX.addEventListener('click', changeFont1);
+oneandhalfX.addEventListener('click', changeFont1);
+twoX.addEventListener('click', changeFont1);
+
+
+
+//changeFont1('twoX');
+//changeFont1('twoX');
+
+
+ 
+
+
+ 
+
+
 
 
 

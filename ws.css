@@ -36,6 +36,8 @@ h2 {
 .main {
     width: 100%;
     height: 100%;
+    display:flex;
+    flex-flow: column wrap;
     background-color: darkviolet;
     transition: 0.5s ease;
 }
@@ -47,14 +49,29 @@ h2 {
     transition: 0.5s ease;
 }
 
-
-
+.sidebar2 {
+    width: 0%;
+    height: 100%;
+    background-color:rgb(237, 228, 100);
+    transition: 0.5s ease;
+}
 
 .side_bigger {
     width: 50%;
 }
 
-
 .main_smaller {
     width: 50%;
+}
+
+.oneX {
+    font-size: 100%;
+}
+
+.oneandhalfX {
+    font-size: 150%;
+}
+
+.twoX {
+    font-size: 200%;
 }
