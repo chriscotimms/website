@@ -22,21 +22,10 @@ document.querySelector('#nav_menu').onclick = function () {
 };
 
 
-
-//main.style.fontSize = "100%";
-//main.style.fontSize = "150%";
-//main.style.fontSize = "200%";
-
-//main.classList.toggle(oneX);
-//main.classList.toggle(oneandhalfX);
-//Access Buttons
+//access menu - Font Size
 const oneX = document.querySelector('#oneX');
 const oneandhalfX = document.querySelector('#oneandhalfX');
 const twoX = document.querySelector('#twoX');
-
-//oneX.addEventListener('click', oneXfnc);
-//oneandhalfX.addEventListener('click', oneandhalfXfnc);
-//twoX.addEventListener('click', twoXfnc);
 
 const changeFont1 = (a) => {
   main.classList.remove('oneX', 'oneandhalfX', 'twoX');
@@ -49,8 +38,29 @@ twoX.addEventListener('click', changeFont1);
 
 
 
-//changeFont1('twoX');
-//changeFont1('twoX');
+//access menu - colour scheme
+const wB = document.querySelector('.whiteblack');
+const bW = document.querySelector('.blackwhite');
+const cP = document.querySelector('.theme1');
+const pC = document.querySelector('.theme1alt');
+const yP = document.querySelector('.theme2');
+const pY = document.querySelector('.theme2alt');
+const lB = document.querySelector('.theme3');
+const bL = document.querySelector('.theme3alt');
+
+const changeColour = (a) => {
+  main.classList.remove('whiteblack', 'blackwhite', 'theme1', 'theme1alt', 'theme2', 'theme2alt', 'theme3', 'theme3alt');
+  main.classList.toggle(a.target.id);
+}; 
+
+wB.addEventListener("click", changeColour);
+bW.addEventListener("click", changeColour);
+cP.addEventListener("click", changeColour);
+pC.addEventListener("click", changeColour);
+yP.addEventListener("click", changeColour);
+pY.addEventListener("click", changeColour);
+lB.addEventListener("click", changeColour);
+bL.addEventListener("click", changeColour);
 
 
  

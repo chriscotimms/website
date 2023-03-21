@@ -1,6 +1,12 @@
 body {
     margin: 0;
+    font-size: 3.3rem;
 }
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
 
 header {
     background:rgb(0, 0, 0);
@@ -18,10 +24,8 @@ h1 {
     margin: 0;
 }
 
-
 h2 {
     text-align:left;
-    color: rgb(99, 0, 145);
     margin: 0;
 }
 
@@ -38,7 +42,7 @@ h2 {
     height: 100%;
     display:flex;
     flex-flow: column wrap;
-    background-color: darkviolet;
+    background-color: rgb(229, 167, 255);
     transition: 0.5s ease;
 }
 
@@ -64,6 +68,7 @@ h2 {
     width: 50%;
 }
 
+/*access menu font sizes*/
 .oneX {
     font-size: 100%;
 }
@@ -74,4 +79,45 @@ h2 {
 
 .twoX {
     font-size: 200%;
+}
+
+/*access menu colours*/
+.whiteblack {
+    background-color: #000000;
+    color: white;
+}
+
+.blackwhite {
+    background-color: white;
+    color: #000000;
+}
+
+.theme1 {
+    color: #453372;
+    background-color: cyan;
+}
+
+.theme1alt {
+    color: cyan;
+    background-color: #453372;
+}
+
+.theme2 {
+    color: #261244;
+    background-color: yellow;
+}
+
+.theme2alt {
+    color: rgb(255, 255, 0);
+  background-color: #261244;
+}
+
+.theme3 {
+    color: blue;
+    background-color: #d6f6b7;
+}
+
+.theme3alt {
+    color: #d6f6b7;
+    background-color: blue;
 }
