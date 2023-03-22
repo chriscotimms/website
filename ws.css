@@ -129,7 +129,7 @@ h2 {
     display:flex;
     flex-flow: column wrap;
     background-color: rgb(229, 167, 255);
-    transition: 0.5s ease;
+    transition: 0.5s ease all;
 }
 
 .mainContent {
@@ -161,7 +161,6 @@ h2 {
 
 .display_none {
     display: none;
-    aria-hidden: true;
 }
 
 /*access menu - font sizes*/
@@ -191,13 +190,13 @@ h2 {
 }
 
 .theme1 {
-    color: #453372;
+    color: #25105a;
     background-color: cyan;
 }
 
 .theme1alt {
     color: cyan;
-    background-color: #453372;
+    background-color: #25105a;
 }
 
 .theme2 {

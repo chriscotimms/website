@@ -43,16 +43,13 @@ document.querySelector('#access_menu').onclick = function () {
   } else {
     main.classList.toggle('main_smaller');//make main section smaller only if neither side is already open
   }
-  sidebar2.classList.toggle('side_bigger');
   if (sidebar2.classList.contains('display_none')) {
     sidebar2.classList.remove('display_none');
     } else {
       setTimeout(displayAdd, 500, sidebar2);
     }
+    sidebar2.classList.toggle('side_bigger');
     setTimeout(displayAdd, 500, sidebar1);
-
-  //sidebar2.classList.toggle('display_none');
-  //setTimeout(displayAdd, 500, sidebar1);
 };
 
 // navigation menu toggle
@@ -63,12 +60,12 @@ document.querySelector('#nav_menu').onclick = function () {
   } else {
     main.classList.toggle('main_smaller'); //make main section smaller only if neither side is already open
   }
-  sidebar1.classList.toggle('side_bigger');
   if (sidebar1.classList.contains('display_none')) {
   sidebar1.classList.remove('display_none');
   } else {
     setTimeout(displayAdd, 500, sidebar1);
   }
+  sidebar1.classList.toggle('side_bigger');
   setTimeout(displayAdd, 500, sidebar2);
 };
 
