@@ -1,30 +1,40 @@
 const sidebar1 = document.querySelector('.sidebar1');
 const sidebar2 = document.querySelector('.sidebar2');
 const main = document.querySelector('.main');
-//const header = document.querySelector('.header')
-//const btns = document.querySelectorl('btns')
-//console.log(btns.classList);
+
+////////////////////KEYS
 
 // variable for currently focused element
 let focusNow = document.getElementById(nav_menu);
 
 document.addEventListener('focusin', function() {
   focusNow = document.activeElement;
-  //console.log('focused: ', document.activeElement);
   console.log(focusNow);// console log focus elements
 }, true);
 
 
-window.addEventListener("keypress", function(event) {
-  // If the user presses the "Enter" key on the keyboard
+// Enter key to activate focused element like mouseclick
+window.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
-    // Cancel the default action, if needed
     event.preventDefault();
-    // Trigger the focused element with a click
     focusNow.click();
   }
 });
 
+//Esc Key to exit menus
+window.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    event.preventDefault();
+    sidebar2.classList.remove('side_bigger');
+    sidebar1.classList.remove('side_bigger');
+    main.classList.remove('main_smaller');
+    setTimeout(displayAdd, 500, sidebar1);
+    setTimeout(displayAdd, 500, sidebar2);
+  }
+});
+
+
+/////////////////Navigation and Accessibility Menus
 
 // add and remove display none class to navigation and access menus to make sure tab navigation isn't overwhlemed 
 function displayRemove(a) {
@@ -77,7 +87,9 @@ const twoX = document.querySelector('#twoX');
 
 const changeFont1 = (a) => {
   main.classList.remove('oneX', 'oneandhalfX', 'twoX');
+  sidebar1.classList.remove('oneX', 'oneandhalfX', 'twoX');
   main.classList.toggle(a.target.id);
+  sidebar1.classList.toggle(a.target.id);
 }; 
 
 
@@ -98,37 +110,7 @@ const bL = document.querySelector('.theme3alt');
 
 const changeColour = (a) => {
   main.classList.remove('whiteblack', 'blackwhite', 'theme1', 'theme1alt', 'theme2', 'theme2alt', 'theme3', 'theme3alt');
-  //header.classList.remove('whiteblack', 'blackwhite', 'theme1', 'theme1alt', 'theme2', 'theme2alt', 'theme3', 'theme3alt');
-  //btns.classList.remove('whiteblack', 'blackwhite', 'theme1', 'theme1alt', 'theme2', 'theme2alt', 'theme3', 'theme3alt');
   main.classList.toggle(a.target.id);
-  //header.classList.toggle(a.target.id);
-  /*switch (a.target.id) {
-    case 'whiteblack':
-      btns.classList.toggle('blackwhite');
-      break;
-    case 'blackwhite':
-      btns.classList.toggle('whiteblack');
-      break;
-    case 'theme1':
-      console.log('acme')
-      break;
-    case 'theme1alt':
-      console.log('lora')
-      break;
-    case 'theme2':
-      console.log('acme')
-      break;
-    case 'theme2alt':
-      console.log('lora')
-      break;
-    case 'theme3':
-      console.log('acme')
-      break;
-    case 'theme3alt':
-      console.log('lora')
-      break;
-
-  }*/
 }; 
 
 wB.addEventListener("click", changeColour);
