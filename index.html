@@ -8,7 +8,7 @@
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="wsmobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Asap+Condensed&family=Nunito&family=Signika+Negative&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Asap+Condensed&family=IBM+Plex+Mono&family=Lora&family=Nunito&display=swap" rel="stylesheet">
     <title>Website</title>
 </head>
 
@@ -17,17 +17,27 @@
 <!--<section onClick="accessMenu()" id="accessMenu" class="accessMenu">
 </section>-->
 
-<header>
+<header class="header">
+<button id="nav_menu" aria-label="navigation">Navigation</button>
 <h1>Chris Timms</h1>
 <button id="access_menu" aria-label="access menu">Access Menu</button>
-<button id="nav_menu" aria-label="access menu">Navigation</button>
 </header>
 
 <section class="container" aria-label="access menu">
 
+    <nav class="sidebar1 display_none">
+        <ul class="navigation">
+            <li><a href="">About</a></li>
+            <li><a href="">Why I'm applying to the program</a></li>
+            <li><a href="">Projects</a></li>
+        </ul>
 
-    <div class="sidebar1">
-    </div>
+        <ul class="socials">
+            <li><a href="https://github.com/chriscotimms" target="_blank">github</a></li>
+            <li><a href="https://www.linkedin.com/in/chris-timms-6a39a48b/" target="_blank">linkdin</a></li>
+            <li><a href="mailto:chriscotimms@gmail.com">Email</a></li>
+        </ul>
+    </nav>
     
     <div class="main">
 
@@ -60,30 +70,30 @@
 
     </div>
 
-    <div class="sidebar2">
+    <div class="sidebar2 display_none">
         <div id="fonts">
-            <span id="oneX" class="oneX">A</span>
-            <span id="oneandhalfX" class="oneandhalfX">A</span>
-            <span id="twoX" class="twoX">A</span>
+            <span id="oneX" class="oneX" tabindex="0">A</span>
+            <span id="oneandhalfX" class="oneandhalfX" tabindex="0">A</span>
+            <span id="twoX" class="twoX" tabindex="0">A</span>
         </div>
 
         <div id="colours">
-            <span id="whiteblack" class="whiteblack">WB</span>
-            <span id="blackwhite" class="blackwhite">BW</span>
-            <span id="theme1" class="theme1">CP</span>
-            <span id="theme1alt" class="theme1alt">PC</span>
-            <span id="theme2" class="theme2">YP</span>
-            <span id="theme2alt" class="theme2alt">PY</span>
-            <span id="theme3" class="theme3">LB</span>
-            <span id="theme3alt" class="theme3alt">BL</span>
+            <span id="whiteblack" class="whiteblack" tabindex="0">WB</span>
+            <span id="blackwhite" class="blackwhite" tabindex="0">BW</span>
+            <span id="theme1" class="theme1" tabindex="0">CP</span>
+            <span id="theme1alt" class="theme1alt" tabindex="0">PC</span>
+            <span id="theme2" class="theme2" tabindex="0">YP</span>
+            <span id="theme2alt" class="theme2alt" tabindex="0">PY</span>
+            <span id="theme3" class="theme3" tabindex="0">LB</span>
+            <span id="theme3alt" class="theme3alt" tabindex="0">BL</span>
         </div>
 
         <div id="font_family">
-            <span id="acme" class="acme">Acme</span>
-            <span id="asapCon" class="asapCon">Signika Negative</span>
-            <span id="nunito" class="nunito">Nunito</span>
-            <span id="signika" class="signika">Signika</span>
-            <span id="staatliches" class="staatliches">Staatliches</span>
+            <span id="acme" class="acme" tabindex="0">Acme</span>
+            <span id="lora" class="lora" tabindex="0">Lora</span>
+            <span id="nunito" class="nunito" tabindex="0">Nunito</span>
+            <span id="signika" class="signika" tabindex="0">Signika</span>
+            <span id="mono" class="mono" tabindex="0">Mono</span>
         </div>
     </div>
 

@@ -4,50 +4,93 @@ body {
 }
 
 a {
-    color: inherit; /* blue colors for links too */
+    color: inherit;
     text-decoration: inherit;
     border-bottom: 0.25rem solid;
   }
 
 a:link {
-    color: inherit; /* blue colors for links too */
+    color: inherit; 
     border-bottom: 0.25rem solid;
   }
 
 a:hover {
-    color: inherit; /* blue colors for links too */
+    color: inherit; 
     border-bottom: 0.5rem solid;
     border-radius: 0.75rem;
-    transition: 1s ease;
+    transition: 0.5s ease;
   }
 
 a:focus {
-    color: inherit; /* blue colors for links too */
+    color: inherit; 
     border-bottom: 0.5rem solid;
     border-radius: 0.75rem;
-    transition: 1s ease;
+    transition: 0.5s ease;
   }
 
 a:active {
-    color: inherit; /* blue colors for links too */
+    color: inherit;
     border-bottom: 0.5rem dashed;
     transition: 0.5s ease;
   }
 
 header {
-    background:rgb(0, 0, 0);
+    background:rgb(255, 117, 117);
+    color: white;
     width:100%;
     margin: 0 auto;
     display:flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    font-size: 0.5em;
     transition: 1s ease;
 }
 
-h1 {
-    text-align:center;
-    color: blanchedalmond;
+button:before {
+
+}
+
+button {
+    flex-basis: 20%;
+    background:#ffffff;
+    color:#000000;
+    border:none;
+    font-size:1.6rem;
+    cursor:pointer;
+    transition:0.5s ease all;
+    outline:#261244;
+    border-radius: 0.75em;
+}
+
+button:hover {
+    background:#000000;
+    color:#ffffff;
+}
+
+button:focus {
+    background:#000000;
+    color:#ffffff;
+}
+
+
+.socials, .navigation {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width:80%;
+}
+
+.socials li, .navigation li {
+    flex-basis: 20%;
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+}
+
+h1 {
+    flex-grow:2;
+    text-align:center;
+    font-size: 1.5em;
 }
 
 h2 {
@@ -65,7 +108,6 @@ h2 {
 
 .main {
     width: 100%;
-    height: auto;
     display:flex;
     flex-flow: column wrap;
     background-color: rgb(229, 167, 255);
@@ -74,22 +116,30 @@ h2 {
 
 .sidebar1 {
     width: 0%;
-    background-color:cornflowerblue;
-    transition: 0.5s ease;
+    background-color:cornflowerblue;   
+    transition: all 0.5s ease; 
 }
 
 .sidebar2 {
     width: 0%;
     background-color:rgb(237, 228, 100);
-    transition: 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .side_bigger {
     width: 50%;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
 }
 
 .main_smaller {
     width: 50%;
+}
+
+.display_none {
+    display: none;
+    aria-hidden: true;
 }
 
 /*access menu - font sizes*/
@@ -156,8 +206,8 @@ h2 {
     font-family: 'Acme', sans-serif;
 }
 
-.asapCon {
-    font-family: 'Asap Condensed', sans-serif;  
+.lora {
+    font-family: 'Lora', serif;  
 }
 
 .nunito {
@@ -168,6 +218,6 @@ h2 {
     font-family: 'Signika Negative', sans-serif;
 }
 
-.staatliches {
-    font-family: 'Staatliches', cursive;
+.mono {
+    font-family: 'IBM Plex Mono', monospace;
 }
