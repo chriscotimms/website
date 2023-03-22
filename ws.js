@@ -64,12 +64,23 @@ bL.addEventListener("click", changeColour);
 
 
  
+//access menu - font family
+const acme = document.querySelector('.acme');
+const asapCon = document.querySelector('.asapCon');
+const nunito = document.querySelector('.nunito');
+const signika = document.querySelector('.signika');
+const staatliches = document.querySelector('.staatliches');
 
+const changeFF = (a) => {
+  main.classList.remove('acme', 'asapCon', 'nunito', 'signika', 'staatliches');
+  main.classList.toggle(a.target.id);
+}; 
 
- 
-
-
-
+acme.addEventListener("click", changeFF);
+asapCon.addEventListener("click", changeFF);
+nunito.addEventListener("click", changeFF);
+signika.addEventListener("click", changeFF);
+staatliches.addEventListener("click", changeFF);
 
 
 

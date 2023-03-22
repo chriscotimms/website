@@ -57,7 +57,7 @@ h2 {
 
 .container {
     width:100%;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     display:flex;
     transition: 1s ease;
@@ -65,7 +65,7 @@ h2 {
 
 .main {
     width: 100%;
-    height: 100%;
+    height: auto;
     display:flex;
     flex-flow: column wrap;
     background-color: rgb(229, 167, 255);
@@ -74,14 +74,12 @@ h2 {
 
 .sidebar1 {
     width: 0%;
-    height: 100%;
     background-color:cornflowerblue;
     transition: 0.5s ease;
 }
 
 .sidebar2 {
     width: 0%;
-    height: 100%;
     background-color:rgb(237, 228, 100);
     transition: 0.5s ease;
 }
@@ -94,7 +92,7 @@ h2 {
     width: 50%;
 }
 
-/*access menu font sizes*/
+/*access menu - font sizes*/
 .oneX {
     font-size: 100%;
 }
@@ -107,7 +105,9 @@ h2 {
     font-size: 200%;
 }
 
-/*access menu colours*/
+
+
+/*access menu - colours*/
 .whiteblack {
     background-color: #000000;
     color: white;
@@ -146,4 +146,28 @@ h2 {
 .theme3alt {
     color: #d6f6b7;
     background-color: blue;
+}
+
+
+
+
+/* Access Menu - Font Families */
+.acme {
+    font-family: 'Acme', sans-serif;
+}
+
+.asapCon {
+    font-family: 'Asap Condensed', sans-serif;  
+}
+
+.nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+.signika {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.staatliches {
+    font-family: 'Staatliches', cursive;
 }
