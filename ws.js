@@ -14,6 +14,7 @@ document.addEventListener('focusin', function() {
   console.log(focusNow);// console log focus elements
 }, true);
 
+
 window.addEventListener("keypress", function(event) {
   // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter") {
@@ -164,3 +165,27 @@ mono.addEventListener("click", changeFF);
 
 
 
+//navigation menu 
+const who = document.querySelector('.who');
+const why = document.querySelector('.why');
+const how = document.querySelector('.how');
+
+let displayThis = document.querySelector('#how');
+
+
+const navFunc = (a) => {
+  let selDom = document.querySelector('#' + a.target.classList.value)
+  document.querySelector('#who').classList.add('display_none');
+  document.querySelector('#why').classList.add('display_none');
+  document.querySelector('#how').classList.add('display_none');
+  selDom.classList.remove('display_none');
+  sidebar1.classList.remove('side_bigger');
+  main.classList.remove('main_smaller');
+  setTimeout(displayAdd, 500, sidebar1);
+}; 
+
+
+
+who.addEventListener("click", navFunc);
+why.addEventListener("click", navFunc);
+how.addEventListener("click", navFunc);
