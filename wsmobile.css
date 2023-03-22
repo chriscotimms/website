@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    border-bottom: 0.25rem solid;
+  }
+
+a:link {
+    color: inherit; 
+    border-bottom: 0.25rem solid;
+  }
+
+a:hover {
+    color: inherit; 
+    border-bottom: 0.5rem solid;
+    border-radius: 0.75rem;
+    transition: 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+a:focus {
+    color: inherit; 
+    border-bottom: 0.5rem solid;
+    border-radius: 0.75rem;
+    transition: 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+a:active {
+    color: inherit;
+    border-bottom: 0.5rem dashed;
+    transition: 0.5s ease;
+  }
+
+li:focus {
+    color: inherit; 
+    border-left: 0.5rem solid;
+    border-radius: 0.75rem;
+    transition: 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+li:hover {
+    color: inherit; 
+    border-left: 0.5rem solid;
+    border-radius: 0.75rem;
+    transition: 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+header {
+    background:rgb(255, 117, 117);
+    color: rgb(0, 0, 0);
+    height: 10vh;
+    width:100%;
+    margin: 0 auto;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    font-size: 0.5em;
+    transition: 1s ease;
+}
+
+button:before {
+
+}
+
+button {
+    flex-basis: 20%;
+    background:#ffffff;
+    color:#000000;
+    border:none;
+    font-size:1.9rem;
+    cursor:pointer;
+    transition:0.5s cubic-bezier(0.19, 1, 0.22, 1) all;
+    outline:#261244;
+    border-radius: 0.85em;
+    margin: 0.5em;
+}
+
+button:hover {
+    background:#000000;
+    color:#ffffff;
+}
+
+button:focus {
+    background:#000000;
+    color:#ffffff;
+}
+
+
+.socials, .navigation {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width:80%;
+}
+
+.socials li, .navigation li {
+    flex-basis: 20%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    flex-grow:2;
+    text-align:center;
+    font-size: 1.5em;
+    display:none;
+}
+
+h2 {
+    text-align:left;
+    margin: 0;
+    font-size: 1em;
+}
+
+.container {
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+    display:flex;
+    transition: 1s ease;
+}
+
+.main {
+    width: 100%;
+    height: 90vh;
+    overflow-y:scroll;
+    display:flex;
+    flex-flow: column wrap;
+    background-color: rgb(229, 167, 255);
+    transition: 0.5s ease;
+}
+
+.mainContent {
+    padding: 1rem;
+}
+
+.sidebar1 {
+    width: 0%;
+    background-color:rgb(175, 188, 255);   
+    transition: all 0.5s ease; 
+}
+
+.sidebar2 {
+    width: 0%;
+    background-color:rgb(237, 228, 100);
+    transition: all 0.5s ease;
+}
+
+.side_bigger {
+    width: 100%;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.main_smaller {
+    width: 0%;
+}
+
+.display_none {
+    display: none;
+    aria-hidden: true;
+}
+
+/*access menu - font sizes*/
+.oneX {
+    font-size: 100%;
+}
+
+.oneandhalfX {
+    font-size: 150%;
+}
+
+.twoX {
+    font-size: 200%;
+}
+
+
+
+/*access menu - colours*/
+.whiteblack {
+    background-color: #000000;
+    color: white;
+}
+
+.blackwhite {
+    background-color: white;
+    color: #000000;
+}
+
+.theme1 {
+    color: #453372;
+    background-color: cyan;
+}
+
+.theme1alt {
+    color: cyan;
+    background-color: #453372;
+}
+
+.theme2 {
+    color: #261244;
+    background-color: yellow;
+}
+
+.theme2alt {
+    color: rgb(255, 255, 0);
+  background-color: #261244;
+}
+
+.theme3 {
+    color: blue;
+    background-color: #d6f6b7;
+}
+
+.theme3alt {
+    color: #d6f6b7;
+    background-color: blue;
+}
+
+
+
+
+/* Access Menu - Font Families */
+.acme {
+    font-family: 'Acme', sans-serif;
+}
+
+.lora {
+    font-family: 'Lora', serif;  
+}
+
+.nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+.signika {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.mono {
+    font-family: 'IBM Plex Mono', monospace;
+}
