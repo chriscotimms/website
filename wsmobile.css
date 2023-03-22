@@ -51,7 +51,7 @@ li:hover {
 header {
     background:rgb(255, 117, 117);
     color: rgb(0, 0, 0);
-    height: 10%;
+    height: 6em;
     width:100%;
     margin: 0 auto;
     display:flex;
@@ -66,16 +66,16 @@ button:before {
 }
 
 button {
-    flex-basis: 20%;
+    flex-basis: 46vw;
     background:#ffffff;
     color:#000000;
     border:none;
-    font-size:1.9rem;
+    font-size:1.5rem;
     cursor:pointer;
     transition:0.5s cubic-bezier(0.19, 1, 0.22, 1) all;
     outline:#261244;
     border-radius: 0.85em;
-    margin: 0.5em;
+    margin: 1vw;
 }
 
 button:hover {
