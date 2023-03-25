@@ -88,7 +88,6 @@ button:focus {
     color:#ffffff;
 }
 
-
 .socials, .navigation {
     display:flex;
     flex-flow: column wrap;
@@ -163,7 +162,6 @@ h2 {
 
 .display_none {
     display: none;
-    aria-hidden: true;
 }
 
 /*access menu - font sizes*/

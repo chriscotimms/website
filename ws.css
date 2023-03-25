@@ -115,6 +115,19 @@ h2 {
     font-size: 1em;
 }
 
+h3 {
+    text-align:left;
+    margin: 0;
+    font-size: 1em;
+}
+
+h4 {
+    text-align:left;
+    margin: 0;
+    font-size: 1em;
+    padding: 1em;
+}
+
 .container {
     width:100%;
     height: auto;
@@ -241,4 +254,21 @@ h2 {
 
 .mono {
     font-family: 'IBM Plex Mono', monospace;
+}
+
+
+.info {
+    padding:0.25em;
+}
+
+.info:focus, .info:hover {
+    color: inherit; 
+    border-bottom: 0.5rem solid;
+    border-radius: 0.75rem;
+    transition: 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.hidden {
+    display: none;
 }

@@ -163,8 +163,33 @@ const navFunc = (a) => {
   setTimeout(displayAdd, 500, sidebar1);
 }; 
 
-
-
 who.addEventListener("click", navFunc);
 why.addEventListener("click", navFunc);
 how.addEventListener("click", navFunc);
+
+
+
+
+///adding functionality to project gallery
+
+const info = document.querySelectorAll('.info');
+const aa = document.querySelectorAll('.aa');
+
+const revealInfo = (e) => {
+  let curAA = focusNow.querySelector('.aa');
+
+  if (curAA.classList.contains('hidden')) {
+    console.log("hidden yes");
+    aa.forEach((item) => {
+      item.classList.add('hidden');
+    })
+    curAA.classList.remove('hidden');
+  } else {
+    console.log("no");
+    curAA.classList.add('hidden');
+}
+};
+
+info.forEach((item) => {
+  item.addEventListener('click', revealInfo);
+})
