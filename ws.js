@@ -9,7 +9,8 @@ let focusNow = document.getElementById(nav_menu);
 
 document.addEventListener('focusin', function() {
   focusNow = document.activeElement;
-  console.log(focusNow);// console log focus elements
+  console.log(focusNow);
+// console log focus elements
 }, true);
 
 
@@ -177,19 +178,17 @@ const aa = document.querySelectorAll('.aa');
 
 const revealInfo = (e) => {
   let curAA = focusNow.querySelector('.aa');
-
   if (curAA.classList.contains('hidden')) {
-    console.log("hidden yes");
     aa.forEach((item) => {
       item.classList.add('hidden');
     })
     curAA.classList.remove('hidden');
   } else {
-    console.log("no");
     curAA.classList.add('hidden');
 }
+focusNow.id.scrollIntoView(true);
 };
 
 info.forEach((item) => {
   item.addEventListener('click', revealInfo);
-})
+});
