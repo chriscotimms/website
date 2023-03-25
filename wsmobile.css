@@ -61,9 +61,6 @@ header {
     transition: 1s ease;
 }
 
-button:before {
-
-}
 
 button {
     flex-basis: 46vw;
@@ -242,4 +239,27 @@ h2 {
 
 .mono {
     font-family: 'IBM Plex Mono', monospace;
+}
+
+
+
+.info {
+    padding:0.25em;
+    width: 100%;
+}
+
+.info:focus, .info:hover {
+    color: inherit; 
+    border-bottom: 0.5rem solid;
+    border-radius: 0.75rem;
+    transition: 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.info img {
+    width:100%;
+}
+
+
+.hidden {
+    display: none;
 }
