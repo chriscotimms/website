@@ -190,5 +190,5 @@ focusNow.id.scrollIntoView(true);
 };
 
 info.forEach((item) => {
-  item.addEventListener('click', revealInfo);
+  item.addEventListener('click', revealInfo); 
 });
