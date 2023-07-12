@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Asap+Condensed&family=IBM+Plex+Mono&family=Lora&family=Nunito&display=swap" rel="stylesheet">
-    <title>Website</title>
+    <title>Chris Timms Website</title>
 </head>
 
 <body>
@@ -44,18 +44,22 @@
 
 <section id="who" class="mainContent" tabindex="0">
             <!--<h2>Who I am</h2>-->
+            
+            
+            
             <p>
-                I'm Chris Timms, a Front-End Web Developer (in-training!) with an interest in Accessibility. 
+                I'm <span class="chris">Chris Timms<img src="img/chris.png" alt="a white middle-aged man smiles into the camera" class="follow-img"></span>, a Front-End Web Developer (in-training!) with an interest in Accessibility. 
                 I have a fine art background, and want to learn and help contribute to developing the best practices of accessible approaches and solutions to Web Development.
             </p> 
+            <p>
+                The Access Menu on the top right of the screen allows the user to change visual settings of the website, such as font size, colour schemes and fonts, in order to try and increase flexibility of how visitors can interact with the site.
+            </p>
             <p>    
                 This website is based upon the approach established in <a href="http://www.psychicrefuge.com/" target="_blank">Psychic Refuge</a>, 
                 a collaborative project by <a href="https://studiohyte.com/" target="_blank">Studio Hyte</a> and artist Sophie Hoyle,
                 focused on facilitating interactive access settings to modify visual features to enhance accessibility.  
             </p>
-            <p>
-                The Access Menu on the top right of the screen allows the user to change visual settings of the website, such as font size, colour schemes and fonts, in order to try and increase flexibility of how visitors can interact with the site.
-            </p>
+            
 </section>
 
 <section id="why" class="display_none mainContent" tabindex="0">
@@ -79,44 +83,108 @@
 
     <p>The application projects for Founders and Coders:</p>
 
-        <article id="website" class="info" tabindex="0">
-            <h3>Website Project</h3>
-            <div class="aa hidden">
-                <img src="https://github.com/chriscotimms/projectgallery/blob/main/img/website.png?raw=true" alt="Screen shot of the personal Website project"/>
-            <p><a href="https://github.com/chriscotimms/website" target="_blank">Website Project</a></p>
-            <p>A website based on an approach by Studio Hyte, where the website has a choice of interactive settings such as font size, colour scheme, and fonts to try to help improve access. There is also javascript keyboard focus navigation for the Tab, Enter and Esc keys, as well as efforts to implemenet Aria-labels.</p>
-            </div>
-        </article>
-
         <article id="game" class="info" tabindex="0">
             <h3>Game Project</h3>
             <div class="aa hidden">
-            <img src="https://github.com/chriscotimms/projectgallery/blob/main/img/game.png?raw=true" alt="Screen shot of Javascript game project"/>
-            <p><a href="https://github.com/chriscotimms/game" target="_blank">Game Project</a></p>
-            <p>A simple Javascript memory-based game, with and additional effort to implement increased access, something missing in a lot of beginner javascript example games. Keyboard navigation using Tab and Arrow keys for focus, and Enter or mouseclick to activate choices. Aria-labels are assigned to all the images, as are large-font numbers. Aria-live politeness settings are high for the game area, and lower for the updating score.</p>
+            <a href="https://chriscotimms.github.io/game4/" target="_blank"><img src="img/gameodvar.png" alt="Screen shot of Javascript RPG Game project"/></a>
+            <p>A top-down RPG following Odvar, a variable character who is trying to find their way.
+                </p>
+                <p>
+                Based on a youtube tutorial series by Drew Conley, I have adapted not just the content of the game, but also implemented changes to the form of the game.
+                </p>
+                <p>
+                I worked on adding accessibility features, such as an Access Screen and Spatial Description prompts.
+                </p>
+                <p>
+                An Access Screen added above the main game container which feeds back to the player what x and y tile they are on, as well as when a collison occurs, if it is named, such as an object or a person, then it feeds back the name, or else if the object has no id and is just a collison tile, then it feeds back the space as blocked.
+                </p>
+                <p>
+                A function which intiates a description of the spatial layout of each space when it is first entered. It describes the most important objects and characters first, alongside entrances, and occassionally also intorduces some humour into the descriptions too, with the characters speaking back to the description.
+                </p>
+                <p>
+                I have also added a minature game-within-a-game where the character is intiated to collect objects from a space to return to another character. I developed this myself, using an object model from the tutorials to make my own objects with different functions, for example, they stop being collison objects when they are collected, and their sprite animation changes to allow flexibility to either become transparent, or else leave some kind of trace of their consumption once they have been collected. The objects are stored in a temporary object array. There is then a comparative check on this array initied by a story flag which then determines whether or not all of the objects have been completed (using Array.prototype.every() running through a hard-coded array to compare with).
+                </p>
+            <p><a href="https://chriscotimms.github.io/game4/" target="_blank">Game Project Link</a></p>
+            <p><a href="https://github.com/chriscotimms/game4" target="_blank">Game Project Repository</a></p>
             </div>
         </article>
 
-    <p>Other projects from and since the previous application</p>
+        <article id="website" class="info" tabindex="0">
+            <h3>Website Project</h3>
+            <div class="aa hidden">
+            <a href="https://chriscotimms.github.io/website/" target="_blank"><img src="img/website2.png" alt="Screen shot of the Personal Website project"/></a>
+            <p>A website based on an approach by Studio Hyte, where the website has a choice of interactive settings such as font size, colour scheme, and fonts to try to help improve access. I have also implemented a Javascript keyboard focus navigation for the Tab, Enter and Esc keys, as well as implemented Aria-labels.</p>
+            <p><a href="https://chriscotimms.github.io/website/" target="_blank">Website Project</a></p>
+            <p><a href="https://github.com/chriscotimms/website" target="_blank">Website Project Repository</a></p>
+            </div>
+        </article>
+
+    <p>Other projects from and since the previous application:</p>
 
         <article id="Paddle_Synthesiser_Game" class="info" tabindex="0">
             <h3>Paddle Synthesiser Game</h3>
             <div class="aa hidden">
-            <img src="https://raw.githubusercontent.com/chriscotimms/projectgallery/b5d62b2059cfedca0796629530105018349fa100/img/hobbypage.png" alt="Screen shot of Hobby Page" class="image"/>
+            <a href="https://chriscotimms.github.io/game3/" target="_blank"><img src="img/PaddleSynth.png" alt="Screen shot of Paddle Synthesiser game" class="image"/></a>
+            <p>
+            An attempt to make an accessible paddle-based game using sound synthesised in Javascript.
+            Sonar effects locate the vertical distance of the ball form the paddle. The pitch made the paddle indicates it's horizontal location in relation to the ball. A lower pitch means it's situated to the left of the ball, a higher pitch to the right.
+            </p>
             <p><a href="https://chriscotimms.github.io/game3/" target="_blank">Paddle Synthesiser Game</a></p>
-            <p>An attempt to make an accessible paddle-based game using sound synthesised in Javascript.
-                Sonar effects locate the vertical distance of the ball form the paddle. The pitch made the paddle indicates it's horizontal location in relation to the ball. A lower pitch means it's situated to the left of the ball, a higher pitch to the right.</p>
+            <p><a href="https://github.com/chriscotimms/game3" target="_blank">Paddle Synthesiser Game</a></p>
             </div>
         </article>
 
-        <article id="hobbypage" class="info" tabindex="0">
-            <h3>Hobby Page Project</h3>
+        <article id="Memory_Card_Game" class="info" tabindex="0">
+            <h3>Memory Card Game</h3>
             <div class="aa hidden">
-            <img src="https://raw.githubusercontent.com/chriscotimms/projectgallery/b5d62b2059cfedca0796629530105018349fa100/img/hobbypage.png" alt="Screen shot of Hobby Page" class="image"/>
-            <p><a href="https://github.com/chriscotimms/hobbypage" target="_blank">Hobby Page Project</a></p>
-            <p>A simple single column mobile-responsive html webpage with a header and footer. Navigation is tag anchored, and the footer displays a minimal javascript driven date.</p>
+            <a href="https://chriscotimms.github.io/game/" target="_blank"><img src="img/memorygame.png" alt="Screen shot of Memory Card Game" class="image"/></a>
+            <p>
+            In reponse for a basic game to be made in javascript, it uses a basic framework for a memory card game, and tries to develop javascript responses to the lack of accessibility for most Javascript games. This includes the creation of aria and tabindex labels in objects that are created in the DOM, the use of Tab, Enter and Arrow keys as well as mousevents to navigate the game.
+            </p>
+            <p>
+            It has been tested with JAWS screenreader software, with adjustments for "polite" for more passive information, and "assertive" for feeding back the focused cards. Tests using any other screen readers are intended, and any feedback from users is additionally welcomed and encouraged.
+            </p>
+            <p><a href="https://chriscotimms.github.io/game/" target="_blank">Memory Card Game</a></p>
+            <p><a href="https://github.com/chriscotimms/game" target="_blank">Memory Card Game Repository</a></p>
             </div>
         </article>
+
+        <article id="Movie_Data_Project" class="info" tabindex="0">
+            <h3>Movie Data Project</h3>
+            <div class="aa hidden">
+            <a href="https://chriscotimms.github.io/moviedata/" target="_blank"><img src="img/moviedata.png" alt="Screen shot of Movie Data Project" class="image"/></a>
+            <p>
+                This project was produced for the Founders and Coders application in Spring 2023. The brief was to work with an array of objects of objects, and to develop code that parses this information in a way that allows the movies to be sorted through various parameters, such as "rating", "runtime", and "year".
+            </p>
+            <p>
+                I started my application a bit too late to realistically apply for the previous deadline, but I had already developed a comment box project which had been a requirement for the application at that time. This time the application had evolved and dropped that requirement, so instead of casting out that work I decided to incorporate it as the interactive element, which was an additional requirement of the moviedata project.
+            </p>
+            <p>
+                I've tried to keep the maintain accessibility by using buttons to hide and display information and comments, which instead of mouseenter and mouseover, have built in tab focus and enter-key access.
+            </p>
+            <p>
+                I've also tried to tidy up some of the code since completing the final two projects. Some of this was necessary to implement some aesthetic changes, but also am trying to practice using anonymous functions and arrow functions as much as possible. When I orginally built this project I was heavily dependant on using ID at every node stage, so i have tried to address this by using Classes more confidently when I can, and using e.target to navigate within more anonymous functions.
+            </p>
+            <p><a href="https://chriscotimms.github.io/moviedata/" target="_blank">Movie Data Project</a></p>
+            <p><a href="https://github.com/chriscotimms/moviedata" target="_blank">Movie Data Project Repository</a></p>
+            </div>
+        </article>
+
+        <article id="Hobby_Page_Project" class="info" tabindex="0">
+            <h3>Hobby Page Project</h3>
+            <div class="aa hidden">
+            <a href="https://chriscotimms.github.io/hobbypage/" target="_blank"><img src="img/hobbypage.png" alt="Screen shot of Movie Data Project" class="image"/></a>
+            <p>
+                A simple single column respionsive webpage. There is a title, menu, lists, images with alt-description, links ot other websites, and a header and footer displaying the date and time using Javascript.
+
+                I have attempted to make the page visually interesting using css such as text-box shadows, curved borders, and gradient backgrounds.
+            </p>
+            <p><a href="https://chriscotimms.github.io/hobbypage/" target="_blank">Hobby Page Project</a></p>
+            <p><a href="https://github.com/chriscotimms/moviedata" target="_blank">Hobby Page Project Repository</a></p>
+            </div>
+        </article>
+
+        
 
 </section>
 </main>
@@ -124,34 +192,36 @@
 
 
     <div class="sidebar2 display_none">
-        <div id="access info">
-        <p>Change font size, colour scheme and font.</p>
-
-        <div id="fonts">
-            <span id="oneX" class="oneX" tabindex="0">A</span>
+    <div id="access info">
+        
+        <div id="fonts" class="accessSections">
+            <p>Change font size:</p>
+            <span id="oneX" class="oneX" tabindex="0" class="pointer">A</span>
             <span id="oneandhalfX" class="oneandhalfX" tabindex="0">A</span>
-            <span id="twoX" class="twoX" tabindex="0">A</span>
+            <span id="twoX" class="twoX" tabindex="0" class="pointer">A</span>
         </div>
-
-        <div id="colours">
-            <span id="whiteblack" class="whiteblack" tabindex="0">WB</span>
-            <span id="blackwhite" class="blackwhite" tabindex="0">BW</span>
-            <span id="theme1" class="theme1" tabindex="0">CP</span>
-            <span id="theme1alt" class="theme1alt" tabindex="0">PC</span>
-            <span id="theme2" class="theme2" tabindex="0">YP</span>
-            <span id="theme2alt" class="theme2alt" tabindex="0">PY</span>
-            <span id="theme3" class="theme3" tabindex="0">LB</span>
-            <span id="theme3alt" class="theme3alt" tabindex="0">BL</span>
+        
+        <div id="colours" class="accessSections">
+            <p>Change colour scheme:</p>
+            <span id="whiteblack" class="whiteblack" tabindex="0" class="pointer">WB</span>
+            <span id="blackwhite" class="blackwhite" tabindex="0" class="pointer">BW</span>
+            <span id="theme1" class="theme1" tabindex="0" class="pointer">CP</span>
+            <span id="theme1alt" class="theme1alt" tabindex="0" class="pointer">PC</span>
+            <span id="theme2" class="theme2" tabindex="0" class="pointer">YP</span>
+            <span id="theme2alt" class="theme2alt" tabindex="0" class="pointer">PY</span>
+            <span id="theme3" class="theme3" tabindex="0" class="pointer">LB</span>
+            <span id="theme3alt" class="theme3alt" tabindex="0" class="pointer">BL</span>
         </div>
-
-        <div id="font_family">
-            <span id="acme" class="acme" tabindex="0">Acme</span>
-            <span id="lora" class="lora" tabindex="0">Lora</span>
-            <span id="nunito" class="nunito" tabindex="0">Nunito</span>
-            <span id="signika" class="signika" tabindex="0">Signika</span>
-            <span id="mono" class="mono" tabindex="0">Mono</span>
+        
+        <div id="font_family" class="accessSections">
+            <p>Change fonts:</p>
+            <span id="acme" class="acme" tabindex="0" class="pointer">Acme</span>
+            <span id="lora" class="lora" tabindex="0" class="pointer">Lora</span>
+            <span id="nunito" class="nunito" tabindex="0" class="pointer">Nunito</span>
+            <span id="signika" class="signika" tabindex="0" class="pointer">Signika</span>
+            <span id="mono" class="mono" tabindex="0" class="pointer">Mono</span>
         </div>
-        </div>
+    </div>
     </div>
 
 </section> 

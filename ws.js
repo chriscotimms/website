@@ -2,6 +2,8 @@ const sidebar1 = document.querySelector('.sidebar1');
 const sidebar2 = document.querySelector('.sidebar2');
 const main = document.querySelector('.main');
 
+
+
 ////////////////////KEYS
 
 // variable for currently focused element
@@ -186,9 +188,24 @@ const revealInfo = (e) => {
   } else {
     curAA.classList.add('hidden');
 }
-focusNow.id.scrollIntoView(true);
+focusNow.scrollIntoView(true);
 };
 
 info.forEach((item) => {
   item.addEventListener('click', revealInfo); 
 });
+
+///adding image on hover for my name
+//'use strict'
+
+let cursor1 = document.querySelector(".follow-img");
+let myName = document.querySelector(".chris");
+
+myName.onmouseover = function(){
+  cursor1.style.opacity = 1;
+}
+myName.onmouseout = function(){
+  cursor1.style.opacity = 0;
+}
+
+
